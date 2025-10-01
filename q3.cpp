@@ -21,22 +21,22 @@ public:
     }
 
     Complex add(Complex val) {
-        double new_real = real + val.real;
-        double new_imag = imag + val.imag;
+        double new_real = real+val.real;
+        double new_imag = imag+val.imag;
         Complex new_complex(new_real, new_imag);
         return new_complex;
     }
 
     Complex subtract(Complex val) {
-        double new_real = real - val.real;
-        double new_imag = imag - val.imag;
+        double new_real = real-val.real;
+        double new_imag = imag-val.imag;
         Complex new_complex(new_real, new_imag);
         return new_complex;
     }
 
     Complex multiply(Complex val) {
-        double new_real = real * val.real - imag * val.imag;
-        double new_imag = real * val.imag + imag * val.real;
+        double new_real = real*val.real-imag*val.imag;
+        double new_imag = real*val.imag + imag*val.real;
         Complex new_complex(new_real, new_imag);
         return new_complex;
     }
